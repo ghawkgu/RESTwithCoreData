@@ -23,6 +23,12 @@
 		E0C53C4A1664C28600F3B9BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0C53C251664C28600F3B9BB /* Foundation.framework */; };
 		E0C53C521664C28600F3B9BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0C53C501664C28600F3B9BB /* InfoPlist.strings */; };
 		E0C53C551664C28600F3B9BB /* RESTwithCoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C53C541664C28600F3B9BB /* RESTwithCoreDataTests.m */; };
+		E0C53C621664C45500F3B9BB /* TwitterModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E0C53C601664C45500F3B9BB /* TwitterModel.xcdatamodeld */; };
+		E0C53C681664C55100F3B9BB /* RTCDDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C53C671664C55100F3B9BB /* RTCDDataStore.m */; };
+		E0C53C6A1664CA7900F3B9BB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0C53C691664CA7900F3B9BB /* CoreData.framework */; };
+		E0C53C701665AB9700F3B9BB /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0C53C6F1665AB9700F3B9BB /* Social.framework */; };
+		E0C53C721665AD6100F3B9BB /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0C53C711665AD6100F3B9BB /* Accounts.framework */; };
+		E0C53C781665CFD000F3B9BB /* RTCDStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C53C771665CFD000F3B9BB /* RTCDStatus.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +64,14 @@
 		E0C53C511664C28600F3B9BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E0C53C531664C28600F3B9BB /* RESTwithCoreDataTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESTwithCoreDataTests.h; sourceTree = "<group>"; };
 		E0C53C541664C28600F3B9BB /* RESTwithCoreDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESTwithCoreDataTests.m; sourceTree = "<group>"; };
+		E0C53C611664C45500F3B9BB /* TwitterModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TwitterModel.xcdatamodel; sourceTree = "<group>"; };
+		E0C53C661664C55100F3B9BB /* RTCDDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTCDDataStore.h; sourceTree = "<group>"; };
+		E0C53C671664C55100F3B9BB /* RTCDDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTCDDataStore.m; sourceTree = "<group>"; };
+		E0C53C691664CA7900F3B9BB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E0C53C6F1665AB9700F3B9BB /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		E0C53C711665AD6100F3B9BB /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		E0C53C761665CFD000F3B9BB /* RTCDStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTCDStatus.h; sourceTree = "<group>"; };
+		E0C53C771665CFD000F3B9BB /* RTCDStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTCDStatus.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +79,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0C53C721665AD6100F3B9BB /* Accounts.framework in Frameworks */,
+				E0C53C701665AB9700F3B9BB /* Social.framework in Frameworks */,
+				E0C53C6A1664CA7900F3B9BB /* CoreData.framework in Frameworks */,
 				E0C53C241664C28600F3B9BB /* UIKit.framework in Frameworks */,
 				E0C53C261664C28600F3B9BB /* Foundation.framework in Frameworks */,
 				E0C53C281664C28600F3B9BB /* CoreGraphics.framework in Frameworks */,
@@ -106,6 +123,9 @@
 		E0C53C221664C28600F3B9BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E0C53C711665AD6100F3B9BB /* Accounts.framework */,
+				E0C53C6F1665AB9700F3B9BB /* Social.framework */,
+				E0C53C691664CA7900F3B9BB /* CoreData.framework */,
 				E0C53C231664C28600F3B9BB /* UIKit.framework */,
 				E0C53C251664C28600F3B9BB /* Foundation.framework */,
 				E0C53C271664C28600F3B9BB /* CoreGraphics.framework */,
@@ -117,11 +137,14 @@
 		E0C53C291664C28600F3B9BB /* RESTwithCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				E0E98D631666E6E300240DC2 /* CoreData Models */,
 				E0C53C321664C28600F3B9BB /* RTCDAppDelegate.h */,
 				E0C53C331664C28600F3B9BB /* RTCDAppDelegate.m */,
 				E0C53C3B1664C28600F3B9BB /* MainStoryboard.storyboard */,
 				E0C53C3E1664C28600F3B9BB /* RTCDViewController.h */,
 				E0C53C3F1664C28600F3B9BB /* RTCDViewController.m */,
+				E0C53C661664C55100F3B9BB /* RTCDDataStore.h */,
+				E0C53C671664C55100F3B9BB /* RTCDDataStore.m */,
 				E0C53C2A1664C28600F3B9BB /* Supporting Files */,
 			);
 			path = RESTwithCoreData;
@@ -158,6 +181,16 @@
 				E0C53C501664C28600F3B9BB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0E98D631666E6E300240DC2 /* CoreData Models */ = {
+			isa = PBXGroup;
+			children = (
+				E0C53C601664C45500F3B9BB /* TwitterModel.xcdatamodeld */,
+				E0C53C761665CFD000F3B9BB /* RTCDStatus.h */,
+				E0C53C771665CFD000F3B9BB /* RTCDStatus.m */,
+			);
+			name = "CoreData Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +307,9 @@
 				E0C53C301664C28600F3B9BB /* main.m in Sources */,
 				E0C53C341664C28600F3B9BB /* RTCDAppDelegate.m in Sources */,
 				E0C53C401664C28600F3B9BB /* RTCDViewController.m in Sources */,
+				E0C53C621664C45500F3B9BB /* TwitterModel.xcdatamodeld in Sources */,
+				E0C53C681664C55100F3B9BB /* RTCDDataStore.m in Sources */,
+				E0C53C781665CFD000F3B9BB /* RTCDStatus.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +484,7 @@
 				E0C53C5A1664C28600F3B9BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0C53C5B1664C28600F3B9BB /* Build configuration list for PBXNativeTarget "RESTwithCoreDataTests" */ = {
 			isa = XCConfigurationList;
@@ -456,8 +493,22 @@
 				E0C53C5D1664C28600F3B9BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E0C53C601664C45500F3B9BB /* TwitterModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E0C53C611664C45500F3B9BB /* TwitterModel.xcdatamodel */,
+			);
+			currentVersion = E0C53C611664C45500F3B9BB /* TwitterModel.xcdatamodel */;
+			path = TwitterModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E0C53C161664C28600F3B9BB /* Project object */;
 }

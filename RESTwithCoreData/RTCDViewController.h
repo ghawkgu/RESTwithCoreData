@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RTCDViewController : UIViewController
+@interface RTCDViewController : UITableViewController
 
 @end
